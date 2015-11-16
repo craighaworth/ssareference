@@ -86,4 +86,4 @@ ssa.application.prototype.alert = function (title,message) {
   ssa.util.alert(title,message);
 };
 
-ssa.applications.prototype.forms = {};
+ssa.application.prototype.forms = {};

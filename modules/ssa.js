@@ -24,8 +24,9 @@ ssa.init = function() {
     Visualizer functional previews
 */
 function initApp() {
+  //ssa.util.alert("INIT");
   ssa.init();
 }
 
-kony.application.setApplicationInitializationEvents({appservice : initApp });
+//kony.application.setApplicationInitializationEvents({init  : initApp, preappinit: initApp, appservice : initApp });
 

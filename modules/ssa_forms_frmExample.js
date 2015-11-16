@@ -12,7 +12,17 @@ ssa.forms.frmExample = function() {
 
   // Initialize form events	
   ssa.forms.frmExample.onInit = function(form) {
-      var self = this;
+      
+    
+      	
+      /*
+    	this.header("btnMenu").onClick = function(button) {
+        ssa.util.alert("My Header Button","Clicked!");
+      };*/
+  };  
+  
+  ssa.forms.frmExample.onPreShow = function(form) {
+    var self = this;
 
       this.leftMenu = new ssa.controls.menu(
           this.control("flexMain"), 
@@ -50,13 +60,7 @@ ssa.forms.frmExample = function() {
       this.control("btn3").onClick = function(button) {
         self.topMenu.toggle();
       };
-    
-      	
-      /*
-    	this.header("btnMenu").onClick = function(button) {
-        ssa.util.alert("My Header Button","Clicked!");
-      };*/
-  };  
+  };
   
   ssa.forms.frmExample.onPostShow = function(form) {
     var self = this;
