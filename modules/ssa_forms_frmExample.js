@@ -13,7 +13,13 @@ ssa.forms.frmExample = function() {
   // Initialize form events	
   ssa.forms.frmExample.onInit = function(form) {
       
-    
+    // NOTE
+    /*
+    	onInit cannot be used in Android functional preview app as there is no possibility to interact
+        with application life cycle events
+        
+        USE onPreShow instead
+    */
       	
       /*
     	this.header("btnMenu").onClick = function(button) {
