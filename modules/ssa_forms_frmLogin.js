@@ -29,6 +29,42 @@ ssa.forms.frmLogin = function() {
             }
     	);
     };
+      
+    self.control("btnAdd").onClick = function(button) {
+      	var user = {
+          _id : "craig52@ssa.co.za",
+          password: "mypass",
+          userType: "private",
+          location: {
+          	lat : "1231231",
+            long : "234234234"
+        	}
+        };
+      
+      	var input = { data : JSON.stringify(user) }; 
+      
+      	application.service("manageService").invokeOperation(
+        	"userAdd", {}, input, function(success) {
+              
+            },
+          	function(error) {
+              
+            }
+        );
+      
+      	// user update example
+      	var inputParams = { id : "craig@ssa.com", data : JSON.stringify( {  location : { lat : "234234", long : "234234234" }}   ) };
+      
+      	application.service("manageService").invokeOperation(
+        	"userUpdate", {}, inputParams, function(success) {
+              
+            },
+          	function(error) {
+              
+            }
+        );
+      	
+    } ; 
   };
 };
 
