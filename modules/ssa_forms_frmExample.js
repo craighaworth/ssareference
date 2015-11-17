@@ -66,6 +66,10 @@ ssa.forms.frmExample = function() {
       this.control("btn3").onClick = function(button) {
         self.topMenu.toggle();
       };
+    
+      this.control("btnLogin").onClick = function(button) {
+        ssa.forms.frmLogin.show();
+      };	
   };
   
   ssa.forms.frmExample.onPostShow = function(form) {

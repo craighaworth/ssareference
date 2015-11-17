@@ -1,0 +1,81 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "46dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s544d2ba55a24e068bf7eea9b4ce5634",
+    "_text_": "Login Screen",
+    "_top_": {
+        "type": "string",
+        "value": "8dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "canUpdateUI": true,
+    "centerX": "50%",
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerWeight": 100,
+    "containerweight": 100,
+    "contentAlignment": 5,
+    "contentalignment": 5,
+    "displayText": true,
+    "displaytext": true,
+    "enabled": false,
+    "focusSkin": "s254392e19e744e5a2b01e67dd4f6349",
+    "focusskin": "s254392e19e744e5a2b01e67dd4f6349",
+    "height": "50dp",
+    "id": "btnLogin",
+    "info": null,
+    "isVisible": true,
+    "isvisible": true,
+    "kuid": "062213d94e7e4087b366523786f6d4a2",
+    "left": "46dp",
+    "margin": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "name": "kony.ui.Button",
+    "padding": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "parent": "frmExample",
+    "pf": "frmExample",
+    "render": true,
+    "skin": "s544d2ba55a24e068bf7eea9b4ce5634",
+    "text": "Login Screen",
+    "top": "8dp",
+    "wType": "Button",
+    "widgetAlignment": 5,
+    "width": "260dp",
+    "zIndex": 1,
+    "zindex": 1
+}

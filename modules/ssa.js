@@ -5,8 +5,10 @@ if (typeof(ssa) === "undefined") {
 // global reference to your app object
 var application = null; 
 
-ssa.initCallback = function(error) {
-
+ssa.initCallback = function() {
+	application.login("techuser@ssa.co.za","T3chpassword", function(result,error) {
+      	if(error) ssa.util.alert("Login Error", error);  
+    });
 };
 
 // Should be called in the App init lifecycle event
@@ -14,6 +16,7 @@ ssa.initCallback = function(error) {
 ssa.init = function() {
   	// initialize form controllers
   	new ssa.forms.frmExample();
+  	new ssa.forms.frmLogin();
   
   	// initialize application
  	application = new ssa.application(ssa.initCallback);

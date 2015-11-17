@@ -60,7 +60,7 @@ ssa.application.prototype.login = function(user, pass, callback) {
 		function(error) {
 			if(callback !== undefined) {
 				kony.print("SSA: Login failure");	
-				callback(null,{ errorcode: 101, errormessage : "login failed"});
+				callback(null,{ errorcode: 101, errormessage : error});
 			}
 		});
 };
