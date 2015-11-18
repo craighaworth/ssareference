@@ -70,6 +70,28 @@ ssa.forms.frmExample = function() {
       this.control("btnLogin").onClick = function(button) {
         ssa.forms.frmLogin.show();
       };	
+    
+    	this.control("btnCreate").onClick = function(button) {
+          var user = {
+                          "_id" : "somenewid23",
+                          "password": "1",
+                          "userType": "private",
+                          "location": {
+                            "lat" : "12315",
+                            "long" : "123141"
+                          }
+                        }; 
+
+                        input = { data : JSON.stringify(user) };
+
+          				ssa.util.alert("input", input);
+
+                        application.service("manageService").invokeOperation(
+                          "userAdd", {}, input, function(success) {
+                          }, function(error) {
+                            ssa.util.alert(error);
+                          });
+        };
   };
   
   ssa.forms.frmExample.onPostShow = function(form) {

@@ -175,7 +175,8 @@
         "flexMenu",
         "flexRightMenu",
         "flexTopMenu",
-        "btnLogin"
+        "btnLogin",
+        "btnCreate"
     ],
     "containerWeight": 100,
     "containerweight": 100,

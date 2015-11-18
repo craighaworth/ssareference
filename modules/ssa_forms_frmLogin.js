@@ -43,6 +43,7 @@ ssa.forms.frmLogin = function() {
       
       	var input = { data : JSON.stringify(user) }; 
       
+      	// create user
       	application.service("manageService").invokeOperation(
         	"userAdd", {}, input, function(success) {
               
